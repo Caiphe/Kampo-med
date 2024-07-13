@@ -1,0 +1,395 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf) format('truetype');
+}
+.red-button {
+  width: 180px;
+  background-color: #C91111;
+  display: flex;
+  height: 45px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.red-button:hover {
+  background-color: #223A66;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button:hover {
+  background-color: #C91111;
+  transition: all 0.3s ease-in-out;
+}
+.site-heading {
+  text-align: center;
+  font-size: 35px;
+  color: #223A66;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+.site-heading:after {
+  content: '';
+  width: 120px;
+  height: 3px;
+  background-color: #C91111;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.red-text {
+  color: #C91111;
+}
+.blue-text {
+  color: #223A66;
+}
+.white-text {
+  color: #fff;
+}
+.whatsapp-button {
+  width: 72px;
+  height: 72px;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  background-color: #cdcdcd;
+  z-index: 3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button img {
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button:hover img {
+  transform: rotate(270deg);
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 500px) {
+  .whatsapp-button {
+    right: 24px;
+  }
+}
+.bottom-container {
+  width: 100%;
+  height: 545px;
+  background-color: #E4EEF4;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .bottom-container {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.bottom-container .description-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .bottom-container .description-container {
+    justify-content: center;
+  }
+}
+.bottom-container .description-container .descript-block {
+  margin-top: 180px;
+}
+@media (max-width: 768px) {
+  .bottom-container .description-container .descript-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.bottom-container .description-container .descript-block p {
+  font-size: 37px;
+  font-family: 'Montserrat', sans-serif;
+  width: 527px;
+}
+@media (max-width: 768px) {
+  .bottom-container .description-container .descript-block p {
+    width: 95%;
+    font-size: 32px;
+  }
+}
+.bottom-container .description-container .descript-block .action-btn {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bottom-container .description-container .doct-image-container {
+  margin-top: -33px;
+}
+@media (max-width: 768px) {
+  .bottom-container .description-container .doct-image-container {
+    display: none;
+  }
+}
+.cutom-centered-block {
+  width: 1035px;
+  position: relative;
+  margin: 0px auto;
+}
+@media (max-width: 1040px) {
+  .cutom-centered-block {
+    width: 90%;
+  }
+}
+.internal-header-banner {
+  height: 267px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .internal-header-banner {
+    margin-top: 110px;
+  }
+}
+.internal-header-banner .internal-mini-header {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+.internal-header-banner .internal-header {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.contact-details-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .contact-details-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.contact-details-container .contact-card {
+  width: 316px;
+  height: 212px;
+  background: #E4EEF4;
+  border: 1px solid #C91111;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .contact-details-container .contact-card {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-details-container .contact-card {
+    width: 95%;
+  }
+}
+.contact-details-container .contact-card .details-icon {
+  width: 50px;
+}
+.contact-details-container .contact-card .contact-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #223A66;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.contact-details-container .contact-card .contact-number {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #C91111;
+  text-align: center;
+  text-decoration: none;
+}
+.contact-details-container .contact-card .contact-number:hover {
+  text-decoration: none;
+}
+.contact-form-container {
+  position: relative;
+  margin-bottom: 100px;
+}
+.contact-form-container .form-heading {
+  color: #223A66;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.contact-form-container .form-block-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.contact-form-container .form-block-container .input-field {
+  width: 49%;
+  height: 45px;
+  outline: none;
+  box-sizing: border-box;
+  padding-left: 15px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: #434343;
+  border: none;
+  background-color: #E4EEF4;
+}
+.contact-form-container .your-message {
+  width: 100%;
+  height: 150px;
+  background-color: #E4EEF4;
+  border-radius: 0px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  outline: none;
+}
+.contact-form-container .form-btn {
+  width: 150px;
+  background-color: #223A66;
+  height: 45px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contact-form-container .form-btn:hover {
+  background-color: #C91111;
+  transition: all 0.3s ease-in-out;
+}
+.maps-container {
+  width: 100%;
+  height: 450px;
+}
+.toast-success,
+.toast-error {
+  width: 180px;
+  top: 20px;
+  z-index: 4;
+  right: -400px;
+  padding: 50px 25px 25px 25px;
+  color: 15px;
+  font-family: 13px;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  position: fixed;
+  line-height: 11px;
+}
+.toast-success:after,
+.toast-error:after {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.toast-success:before,
+.toast-error:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 22px;
+  left: 25px;
+}
+.toast-success.show,
+.toast-error.show {
+  right: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.toast-success span,
+.toast-error span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 20px;
+  color: #fff;
+  display: block;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: -5px;
+}
+.toast-error {
+  background-color: #C91111;
+}
+.toast-error:after {
+  content: 'ERROR';
+}
+.toast-success {
+  background-color: #094e15;
+}
+.toast-success:after {
+  content: 'SUCCESS';
+}

@@ -1,0 +1,116 @@
+@import "custom.less";
+
+.services-container{
+    min-height: 600px;
+    padding-top: 50px;
+    overflow: hidden;
+
+    @media(max-width: 500px){
+        width: 100%;
+    }
+    
+
+    .services-heading{
+        font-size: 25px;
+        color: @blue;
+        font-family: @MontMedium;
+
+        @media(max-width: 768px){
+            width: 90%;
+            margin: 10px auto;
+        }
+    }
+
+    .main-services-container{
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        @media(max-width: 1040px){
+            flex-wrap: wrap;
+
+            .service-card{
+                margin-bottom: 25px;
+            }
+        }
+
+        @media(max-width: 768px){
+            justify-content: center;
+        }
+
+        .service-card{
+            width: 320px;
+            height: 260px;
+            background: #FFFFFF;
+            box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.06);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: all .3s ease-in-out;
+            margin-bottom: 30px;
+
+            .service-img-container{
+                width: 278px;
+                height: 160px;
+                overflow: hidden;
+
+                .service-img{
+                    height: 100%;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    transition: all .3s ease-in-out;
+                }
+            }
+
+            .service-name{
+                font-family: @MontBold;
+                font-size: 17px;
+                margin-top: 15px;
+                color: #242424;
+            }
+
+            &:hover{
+                margin-top: -10px;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+                // background-color: @blue;
+                background-color: #cdcdcd;
+
+                .service-img-container{
+                    .service-img{
+                        // transform: scale(1.1);
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                .service-name{
+                    color: @red;
+                }
+            }
+        }
+    }
+
+    .free-service-container{
+        background-color: @red;
+        margin-bottom: 70px;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: @MontMedium;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 28px;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        @media(max-width: 768px){
+            width: 90%;
+            margin: 10px auto 50px;
+
+        }
+    }
+}

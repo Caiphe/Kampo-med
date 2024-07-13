@@ -1,0 +1,196 @@
+@import "custom.less";
+
+.contact-details-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media(max-width: 768px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-card{
+        width: 316px;
+        height: 212px;
+        background: #E4EEF4;
+        border: 1px solid #C91111;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media(max-width: 768px){
+            margin-bottom: 25px;
+        }
+        @media(max-width: 500px){
+            width: 95%;
+        }
+
+        .details-icon{
+            width: 50px;
+        }
+
+        .contact-heading{
+            font-family: @MontMedium;
+            color: @blue;
+            font-size: 20px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .contact-number{
+            font-family: @MontBold;
+            font-size: 16px;
+            color: @red;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.contact-form-container{
+    position: relative;
+    margin-bottom: 100px;
+
+    .form-heading{
+        color: @blue;
+        font-family: @MontBold;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .form-block-container{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .input-field{
+            width: 49%;
+            height: 45px;
+            outline: none;
+            box-sizing: border-box;
+            padding-left: 15px;
+            font-size: 15px;
+            font-family: @MontRegular;
+            color: #434343;
+            border: none;
+            background-color: #E4EEF4;
+        }
+    }
+
+    .your-message{
+        width: 100%;
+        height: 150px;
+        background-color: #E4EEF4;
+        border-radius: 0px;
+        border: none;
+        font-family: @MontRegular;
+        padding: 15px;
+        font-size: 15px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        outline: none;
+    }
+
+    .form-btn{
+        width: 150px;
+        background-color: @blue;
+        height: 45px;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 40px;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            background-color: @red;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.maps-container{
+    width: 100%;
+    height: 450px;
+}
+
+.toast-success,
+.toast-error{
+    width: 180px;
+    top: 20px;
+    z-index: 4;
+    right: -400px;
+    padding: 50px 25px 25px 25px;
+    color: 15px;
+    font-family: 13px;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    position: fixed;
+    line-height: 11px;
+
+    &:after{
+        position: absolute;
+        top: 20px;
+        left: 45px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        font-family: @MontBold;
+    }
+
+    &:before{
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: 22px;
+        left: 25px;
+    }
+
+    &.show{
+        right: 20px;
+        transition: all .3s ease-in-out;
+    }
+
+    span{
+        display: block;
+        font-family: @MontRegular;
+        font-size: 14px;
+        line-height: 18px;
+        padding-left: 20px;
+        color: #fff;
+        display: block;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-bottom: -5px;
+    }
+}
+
+.toast-error{
+    background-color: @red;
+
+    &:after{
+        content: 'ERROR';
+    }
+}
+
+.toast-success{
+    background-color: #094e15;
+
+    &:after{
+        content: 'SUCCESS';
+    }
+}

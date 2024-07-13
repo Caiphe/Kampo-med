@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf) format('truetype');
+}
+.footer-container {
+  background-color: #223A66;
+  height: 170px;
+  width: 100%;
+  border-bottom: solid 20px #C91111;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer-container .footer-kampo {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.footer-container .social-icons {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.footer-container .social-icons li {
+  list-style: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.footer-container .social-icons li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-container .copyright-text {
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 15px;
+}

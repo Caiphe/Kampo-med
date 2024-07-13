@@ -1,0 +1,319 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf) format('truetype');
+}
+.red-button {
+  width: 180px;
+  background-color: #C91111;
+  display: flex;
+  height: 45px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.red-button:hover {
+  background-color: #223A66;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.blue-button:hover {
+  background-color: #C91111;
+  transition: all 0.3s ease-in-out;
+}
+.site-heading {
+  text-align: center;
+  font-size: 35px;
+  color: #223A66;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+.site-heading:after {
+  content: '';
+  width: 120px;
+  height: 3px;
+  background-color: #C91111;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.red-text {
+  color: #C91111;
+}
+.blue-text {
+  color: #223A66;
+}
+.white-text {
+  color: #fff;
+}
+.whatsapp-button {
+  width: 72px;
+  height: 72px;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  background-color: #cdcdcd;
+  z-index: 3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button img {
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp-button:hover img {
+  transform: rotate(270deg);
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 500px) {
+  .whatsapp-button {
+    right: 24px;
+  }
+}
+.bottom-container {
+  width: 100%;
+  height: 545px;
+  background-color: #E4EEF4;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .bottom-container {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.bottom-container .description-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .bottom-container .description-container {
+    justify-content: center;
+  }
+}
+.bottom-container .description-container .descript-block {
+  margin-top: 180px;
+}
+@media (max-width: 768px) {
+  .bottom-container .description-container .descript-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.bottom-container .description-container .descript-block p {
+  font-size: 37px;
+  font-family: 'Montserrat', sans-serif;
+  width: 527px;
+}
+@media (max-width: 768px) {
+  .bottom-container .description-container .descript-block p {
+    width: 95%;
+    font-size: 32px;
+  }
+}
+.bottom-container .description-container .descript-block .action-btn {
+  display: block;
+  background-color: #223A66;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  width: 190px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bottom-container .description-container .doct-image-container {
+  margin-top: -33px;
+}
+@media (max-width: 768px) {
+  .bottom-container .description-container .doct-image-container {
+    display: none;
+  }
+}
+.cutom-centered-block {
+  width: 1035px;
+  position: relative;
+  margin: 0px auto;
+}
+@media (max-width: 1040px) {
+  .cutom-centered-block {
+    width: 90%;
+  }
+}
+.internal-header-banner {
+  height: 267px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .internal-header-banner {
+    margin-top: 110px;
+  }
+}
+.internal-header-banner .internal-mini-header {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+.internal-header-banner .internal-header {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.services-container {
+  min-height: 600px;
+  padding-top: 50px;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .services-container {
+    width: 100%;
+  }
+}
+.services-container .services-heading {
+  font-size: 25px;
+  color: #223A66;
+  font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 768px) {
+  .services-container .services-heading {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+.services-container .main-services-container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+@media (max-width: 1040px) {
+  .services-container .main-services-container {
+    flex-wrap: wrap;
+  }
+  .services-container .main-services-container .service-card {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .services-container .main-services-container {
+    justify-content: center;
+  }
+}
+.services-container .main-services-container .service-card {
+  width: 320px;
+  height: 260px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+.services-container .main-services-container .service-card .service-img-container {
+  width: 278px;
+  height: 160px;
+  overflow: hidden;
+}
+.services-container .main-services-container .service-card .service-img-container .service-img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+.services-container .main-services-container .service-card .service-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  margin-top: 15px;
+  color: #242424;
+}
+.services-container .main-services-container .service-card:hover {
+  margin-top: -10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #cdcdcd;
+}
+.services-container .main-services-container .service-card:hover .service-img-container .service-img {
+  transition: all 0.3s ease-in-out;
+}
+.services-container .main-services-container .service-card:hover .service-name {
+  color: #C91111;
+}
+.services-container .free-service-container {
+  background-color: #C91111;
+  margin-bottom: 70px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .services-container .free-service-container {
+    width: 90%;
+    margin: 10px auto 50px;
+  }
+}
